@@ -89,7 +89,7 @@ done
 
 echo "Output added to $filename"
 
-cat $filename  | cut -d '/' -f1 | while read ip; do ping -c1 $ip >/dev/null 2>&1 && echo $ip IS UP || echo $ip IS DOWN; done
+#cat $filename  | cut -d '/' -f1 | while read ip; do ping -c1 $ip >/dev/null 2>&1 && echo $ip IS UP || echo $ip IS DOWN; done
 
 systemctl restart network
 
